@@ -10,6 +10,8 @@ function bishopAndPawn(bishop: string, pawn: string): boolean {
         "h" :8,
     }
 
+    console.log(board[pawn[0]])
+
     let bishopX = board[bishop[0]]
     let bishopY = parseInt(bishop[1])
     let pawnX = board[pawn[0]]
@@ -18,6 +20,8 @@ function bishopAndPawn(bishop: string, pawn: string): boolean {
     if(bishopX + bishopY === pawnX + pawnY || bishopX + pawnY === bishopY + pawnY){
         return true
     }
+
+    console.log(board[pawn[0]])
 
 
 
