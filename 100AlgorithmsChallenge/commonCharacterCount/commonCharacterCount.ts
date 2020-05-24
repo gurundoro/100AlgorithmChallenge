@@ -21,6 +21,8 @@ function commonCharacterCount(s1: string, s2: string): number {
             hash[secondString[j]] -= 1
         }
     }
+    console.log(hash)
+
 
     return count
 }
