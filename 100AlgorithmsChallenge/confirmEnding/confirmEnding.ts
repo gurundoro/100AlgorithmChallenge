@@ -1,10 +1,11 @@
 function confirmEnding(str: string, target: string) {
 
-    let res = " "
 
-    for(let i = 0; i < str.length; i++){
-        
-    }
+   let index =  str.length - target.length
+   
+    if(str.substring(index) === target) return true
+    
+    return false
    
 }
 
