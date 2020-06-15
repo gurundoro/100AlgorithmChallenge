@@ -1,18 +1,23 @@
 function fancyRide(l: number, fares: number[]): string {
-  
+ 
+ //set array of cars that corresponds to fare type
  let rides = ["UberX", "UberXL", "UberPlus", "UberBlack", "UberSUV"]
 
- let max = 0 
+ //set index variable 
  let index = 0 
-
+ 
+ //iterate over fares
  for(let i = 0; i < fares.length; i++){
+    // find total fare at given milage per vehicle
     let total = l * fares[i]
-    max =  Math.max(max, total)
-    if(total < 20 && total === max){
+    //if total in that iteration is less than $20 
+    if(total < 20){
+    //save index
       index = i 
     }
  }
-
+ 
+ //return vehicle of matching index
  return rides[index]
 }
 
