@@ -6,16 +6,16 @@ function findClosestPair(numbers: number[], sum: number): number {
 
 
     for(let i = 0; i < numbers.length; i++){
-        map[numbers[i]] = i 
+        map[i] = numbers[i] 
     }
-
+   
     
 
     for(let i = 0; i < numbers.length; i++){
        for(let j = 0; j < numbers.length; j++){
            if(numbers[i] + map[j] === sum){
               let space = Math.abs(i - j)
-                 distance = Math.min(space,distance )
+              distance = Math.min(space,distance )
            }
        }
     }
