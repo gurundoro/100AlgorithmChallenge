@@ -6,18 +6,24 @@ function firstNotRepeatingCharacter(s: string): string {
   let index = Infinity
 
   for(let i = 0; i < array.length; i++){
-      map[array[i]]? map[array[i]]++ : map[array[i]] = 1
+      if(map[array[i]]){
+          map[array[i]].count++
+      }else{
+          map[array[i]] = {
+              count: 1,
+              index: i
+          }
+      }
   }
 
   console.log(map)
 
-  array.forEach((el, idx) => {
-    if(map[el] === 1 && idx < index){
-        index = idx
-        unique = el
-    }
-  })
-
+  for(let key in map){
+      if(map[key].count === 1 && map[key].index < index){
+          unique = key
+          index = map[key].index
+      }
+  }
 
   return unique
 
