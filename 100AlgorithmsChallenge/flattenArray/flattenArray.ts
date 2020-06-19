@@ -1,5 +1,9 @@
 function flattenArray(arr: any[]): any[] {
 
+    let newArray = [].concat.apply([], arr)
+
+    return newArray
+
 }
 
 console.log(flattenArray([[["a"]], [["b"]]]));
