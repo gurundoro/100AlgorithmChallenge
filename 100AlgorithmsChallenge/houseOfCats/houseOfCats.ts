@@ -1,5 +1,7 @@
 function houseOfCats(legs: number): number[] {
 
+    let 
+
 }
 
 console.log(houseOfCats(6));
