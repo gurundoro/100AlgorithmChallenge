@@ -1,8 +1,7 @@
 function flattenArray(arr: any[]): any[] {
 
-    let newArray = [].concat.apply([], arr)
+   return arr.reduce((acc,curr) => ( acc.concat(Array.isArray(curr)? flattenArray(curr): curr)), [])
 
-    return newArray
 
 }
 
