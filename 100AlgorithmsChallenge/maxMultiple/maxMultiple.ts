@@ -1,16 +1,20 @@
 function maxMultiple(divisor: number, bound: number): number  {
 
-    let number = divisor
+    // let number = divisor
 
-    while(number <= bound){
-        if((number+divisor) > bound){
-            return number
-        } else{
-            number += divisor
-        }
-    }
+    // while(number <= bound){
+    //     if((number+divisor) > bound){
+    //         return number
+    //     } else{
+    //         number += divisor
+    //     }
+    // }
 
-    return number
+    // return number
+
+    let remainder = bound % divisor
+
+    return bound - remainder
 
 }
 
