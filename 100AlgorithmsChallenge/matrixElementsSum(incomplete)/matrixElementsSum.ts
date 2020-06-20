@@ -1,5 +1,7 @@
 function matrixElementsSum(matrix: any[][]): number {
 
+    let price 
+
 }
 
 console.log(matrixElementsSum(
