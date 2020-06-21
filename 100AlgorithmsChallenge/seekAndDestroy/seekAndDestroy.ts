@@ -1,4 +1,7 @@
 function seekAndDestroy(arr1: number[], arr2: number[]): number[] {
+
+     return arr1.filter(a => arr2.indexOf(a) === -1)
+
    
 }
 
