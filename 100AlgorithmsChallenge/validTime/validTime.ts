@@ -1,5 +1,5 @@
 function validTime(time: string): boolean {
-
+     const = time
 }
 
 console.log(validTime('13:58'));
