@@ -1,5 +1,6 @@
 function switchLights(a: number[]): number[] {
 
+    const number;
 }
 
 
